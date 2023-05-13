@@ -6,6 +6,9 @@ module.exports = {
       sans: ['Poppins', 'sans-serif'],
     },
     extend: {
+      animation: {
+        'spin-slow': 'spin 30s linear infinite',
+      }
     },
   },
   plugins: [],
