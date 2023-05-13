@@ -692,6 +692,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-3\.5{
+  padding: 0.875rem;
+}
+
 .px-16{
   padding-left: 4rem;
   padding-right: 4rem;
@@ -947,6 +951,14 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:gap-4{
+    gap: 1rem;
+  }
+
+  .sm\:gap-5{
+    gap: 1.25rem;
+  }
+
   .sm\:p-5{
     padding: 1.25rem;
   }
@@ -957,6 +969,10 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:p-5{
+    padding: 1.25rem;
+  }
+
   .md\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
