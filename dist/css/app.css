@@ -581,6 +581,10 @@ video {
   flex-basis: 66.666667%;
 }
 
+.basis-1\/2{
+  flex-basis: 50%;
+}
+
 @keyframes spin{
   to{
     transform: rotate(360deg);
