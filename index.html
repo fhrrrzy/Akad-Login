@@ -21,42 +21,42 @@
                 </div>
             </div>
         </div>
-        <div class="hidden md:block w-96 h-96 bg-green-300/75 absolute top-1/2 left-3/4 -translate-x-1/2 -translate-y-1/2 scale-110"></div>
+        <div class="hidden md:block w-96 h-96 lg:scale-150 lg:left-[70%] lg:top-[55%] bg-green-300/75 absolute top-1/2 left-3/4 -translate-x-1/2 -translate-y-1/2 scale-110"></div>
         <div class="hidden md:block w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 backdrop-blur-[100px]"></div>
         <div class="basis-4/6 md:basis-1/2 w-full bg-slate-50 md:bg-transparent relative">
             <form action="" class="absolute inset-0 flex justify-center items-center w-full lg:max-w-xl flex-wrap gap-2 mx-auto">
                 <div class="flex flex-wrap gap-5 justify-center">
                     <div class="flex flex-wrap gap-2 sm:gap-4 justify-center px-16">
                         <div class="form-group w-full">
-                            <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-white duration-200" placeholder="Masukkan username anda">
+                            <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-gray-50 duration-200" placeholder="Masukkan username anda" name="username">
                         </div>
                         <div class="form-group w-full">
-                            <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-white duration-200" placeholder="Masukkan password anda">
+                            <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-gray-50 duration-200" placeholder="Masukkan password anda" name="password">
                         </div>
                         <div class="form-group w-full">
-                            <select type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-white duration-200 appearance-none text-gray-400 focus:text-black aria-selected:text-black">
-                                <option value="" class="" disabled selected>login sebagai</option>    
-                                <option value="" class="px-5 py-3">mahasiswa</option>    
-                                <option value="" class="px-5 py-3">mahasiswa</option>    
-                                <option value="" class="px-5 py-3">mahasiswa</option>    
-                                <option value="" class="px-5 py-3">mahasiswa</option>    
-                                <option value="" class="px-5 py-3">mahasiswa</option>    
+                            <select type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-gray-50 duration-200 appearance-none text-gray-400 focus:text-black aria-selected:text-black" name="login_sebagai">
+                                <option value="mhs" class="" disabled selected>login sebagai</option>    
+                                <option value="mhs_baru" class="px-5 py-3">Mahasiswa Baru</option>    
+                                <option value="mhs_tamu" class="px-5 py-3">Mahasiswa</option>    
+                                <option value="dosen" class="px-5 py-3">Dosen</option>    
+                                <option value="dosen_tamu" class="px-5 py-3">Dosen Tamu</option>    
+                                <option value="orang_tua" class="px-5 py-3">Orang Tua</option>    
                             </select>
                         </div>
                     </div>
                     <div class="flex flex-wrap gap-2 sm:gap-4 justify-center w-full px-16">
                         <label for="captcha" class="text-left w-full px-3">Captcha :</label>
                         <div class="flex gap-3 w-full">
-                            <div class="form-group basis-1/2">
+                            <div class="form-group basis-1/2 md:basis-1/4">
                                 <div type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 text-center focus:outline-green-400 focus:bg-white duration-200"> 3+5 = ?</div>
                             </div>
-                            <div class="form-group basis-1/2">
-                                <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-white duration-200" placeholder="Jawaban">
+                            <div class="form-group basis-1/2 md:basis-3/4">
+                                <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-gray-50 duration-200" placeholder="Jawaban" name="captcha_word">
                             </div>
                         </div>
                     </div>
                     <div class="flex flex-wrap gap-2 sm:gap-4 justify-center w-full px-16">
-                        <button class="p-3.5 md:p-5 text-center bg-green-500 w-full rounded-lg text-white font-bold text-lg shadow-[0_10px_30px_15px_rgba(22,163,74,0.3)] duration-200 hover:bg-green-600 hover:text-gray-200">Login</button>
+                        <button type="submit" class="p-3.5 md:p-5 text-center bg-green-500 w-full rounded-lg text-white font-medium text-lg shadow-[0_10px_30px_15px_rgba(22,163,74,0.3)] duration-200 hover:bg-green-600 hover:text-gray-200">Login</button>
                     </div>
                     <div class="flex justify-center w-full">
                         <p class="text-xs md:text-base">Memiliki kendala login ? <button class="text-green-700 underline" id="open-help-desk" type="button">hubungi admin</button></p>
@@ -79,7 +79,7 @@
                 <img src="dist/images/book.svg" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-90 lg:top-[59%] lg:left-[40%] lg:scale-[1.05]">
                 <div class="md:max-w-lg xl:max-w-xl z-0 absolute">
                     <h1 class="text-green-500 font-bold lg:text-5xl mb-5">Kelola Kehidupan Akademikmu dengan Mudah</h1>
-                    <p class="text-gray-800 lg:text-xl font-medium">Aplikasi Sistem Informasi Akademik untuk Mahasiswa, Dosen, dan Orang Tua dengan Beragam Fungsi yang Memudahkan</p>
+                    <p class="text-gray-600 lg:text-xl font-medium">Aplikasi Sistem Informasi Akademik untuk Mahasiswa, Dosen, dan Orang Tua dengan Beragam Fungsi yang Memudahkan</p>
                 </div>
             </div>
         </div>
