@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/app.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/app.css" />
     <title>AKAD UNIMED | Login</title>
 </head>
+
 <body>
     <div class="flex flex-col md:flex-row w-screen h-screen">
         <div class="basis-2/6 w-full relative overflow-hidden md:hidden">
             <div class="absolute inset-0 flex justify-center items-center">
-                <img src="dist/images/book.svg" alt="" class="animate-spin-slow">
+                <img src="dist/images/book.svg" alt="" class="animate-spin-slow" />
             </div>
             <div class="absolute inset-0 flex justify-center items-center backdrop-blur-2xl"></div>
             <div class="absolute inset-0 flex justify-center items-center">
                 <div class="px-16">
-                    <h1 class="text-green-600 text-3xl font-bold mb-1">Hai, selamat datang kembali!</h1>
-                    <p class="text-gray-700">Masuk ke akunmu untuk mengakses fitur-fitur yang tersedia</p>
+                    <h1 class="text-green-600 text-3xl font-bold mb-1">
+                        Hai, selamat datang kembali!
+                    </h1>
+                    <p class="text-gray-700">
+                        Masuk ke akunmu untuk mengakses fitur-fitur yang tersedia
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="hidden md:block w-96 h-96 lg:scale-150 lg:left-[70%] lg:top-[55%] bg-green-300/75 absolute top-1/2 left-3/4 -translate-x-1/2 -translate-y-1/2 scale-110"></div>
-        <div class="hidden md:block w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 backdrop-blur-[100px]"></div>
+        <div
+            class="hidden md:block w-96 h-96 lg:scale-150 lg:left-[70%] lg:top-[55%] bg-green-300/75 absolute top-1/2 left-3/4 -translate-x-1/2 -translate-y-1/2 scale-110">
+        </div>
+        <div
+            class="hidden md:block w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 backdrop-blur-[100px]">
+        </div>
         <div class="basis-4/6 md:basis-1/2 w-full bg-slate-50 md:bg-transparent relative">
-            <form action="" class="absolute inset-0 flex justify-center items-center w-full lg:max-w-xl flex-wrap gap-2 mx-auto">
+            <form action=""
+                class="absolute inset-0 flex justify-center items-center w-full lg:max-w-xl flex-wrap gap-2 mx-auto">
                 <div class="flex flex-wrap gap-5 justify-center">
                     <div class="flex flex-wrap gap-2 sm:gap-4 justify-center px-16">
                         <div class="form-group w-full">
-                            <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-gray-50 duration-200" placeholder="Masukkan username anda" name="username">
+                            <input type="text"
+                                class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-gray-50 duration-100"
+                                placeholder="Masukkan username anda" name="username" />
                         </div>
                         <div class="form-group w-full">
-                            <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-gray-50 duration-200" placeholder="Masukkan password anda" name="password">
+                            <input type="text"
+                                class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-gray-50 duration-100"
+                                placeholder="Masukkan password anda" name="password" />
                         </div>
                         <div class="form-group w-full">
-                            <select type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-gray-50 duration-200 appearance-none text-gray-400 focus:text-black aria-selected:text-black" name="login_sebagai">
-                                <option value="mhs" class="" disabled selected>login sebagai</option>    
-                                <option value="mhs_baru" class="px-5 py-3">Mahasiswa Baru</option>    
-                                <option value="mhs_tamu" class="px-5 py-3">Mahasiswa</option>    
-                                <option value="dosen" class="px-5 py-3">Dosen</option>    
-                                <option value="dosen_tamu" class="px-5 py-3">Dosen Tamu</option>    
-                                <option value="orang_tua" class="px-5 py-3">Orang Tua</option>    
+                            <select type="text"
+                                class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-gray-50 duration-100 appearance-none text-gray-400 focus:text-black aria-selected:text-black"
+                                name="login_sebagai">
+                                <option value="mhs" class="" disabled selected>
+                                    login sebagai
+                                </option>
+                                <option value="mhs_baru" class="px-5 py-3">
+                                    Mahasiswa Baru
+                                </option>
+                                <option value="mhs_tamu" class="px-5 py-3">Mahasiswa</option>
+                                <option value="dosen" class="px-5 py-3">Dosen</option>
+                                <option value="dosen_tamu" class="px-5 py-3">
+                                    Dosen Tamu
+                                </option>
+                                <option value="orang_tua" class="px-5 py-3">Orang Tua</option>
                             </select>
                         </div>
                     </div>
@@ -48,27 +71,41 @@
                         <label for="captcha" class="text-left w-full px-3">Captcha :</label>
                         <div class="flex gap-3 w-full">
                             <div class="form-group basis-1/2 md:basis-1/4">
-                                <div type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 text-center focus:outline-green-400 focus:bg-white duration-200"> 3+5 = ?</div>
+                                <div type="text"
+                                    class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 text-center focus:outline-green-400 focus:bg-white duration-100">
+                                    3+5 = ?
+                                </div>
                             </div>
                             <div class="form-group basis-1/2 md:basis-3/4">
-                                <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-gray-50 duration-200" placeholder="Jawaban" name="captcha_word">
+                                <input type="text"
+                                    class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-gray-50 duration-100"
+                                    placeholder="Jawaban" name="captcha_word" />
                             </div>
                         </div>
                     </div>
                     <div class="flex flex-wrap gap-2 sm:gap-4 justify-center w-full px-16">
-                        <button type="submit" class="p-3.5 md:p-5 text-center bg-green-500 w-full rounded-lg text-white font-medium text-lg shadow-[0_10px_30px_15px_rgba(22,163,74,0.3)] duration-200 hover:bg-green-600 hover:text-gray-200">Login</button>
+                        <button type="submit"
+                            class="p-3.5 md:p-5 text-center bg-green-500 w-full rounded-lg text-white font-medium text-lg shadow-[0_10px_30px_15px_rgba(22,163,74,0.3)] duration-100 hover:bg-green-600 hover:text-gray-200">
+                            Login
+                        </button>
                     </div>
                     <div class="flex justify-center w-full">
-                        <p class="text-xs md:text-base">Memiliki kendala login ? <button class="text-green-700 underline" id="open-help-desk" type="button">hubungi admin</button></p>
+                        <p class="text-xs md:text-base">
+                            Memiliki kendala login ?
+                            <button class="text-green-700 underline" id="open-help-desk" type="button">
+                                hubungi admin
+                            </button>
+                        </p>
                     </div>
-                    <div class="w-full flex flex-wrap justify-center gap-4 md:absolute md:bottom-10 md:left-0 md:right-0">
+                    <div
+                        class="w-full flex flex-wrap justify-center gap-4 md:absolute md:bottom-10 md:left-0 md:right-0">
                         <div class="flex justify-center w-full">
                             <div class="h-[1px] rounded-full w-1/2 mx-auto bg-slate-400"></div>
                         </div>
                         <div class="flex gap-3 justify-center items-center md:scale-105">
-                            <img src="dist/images/kemdikbud.png" alt="">
-                            <img src="dist/images/unimed.png" alt="">
-                            <img src="dist/images/kampus-merdeka.png" alt="">
+                            <img src="dist/images/kemdikbud.png" alt="" />
+                            <img src="dist/images/unimed.png" alt="" />
+                            <img src="dist/images/kampus-merdeka.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -76,39 +113,56 @@
         </div>
         <div class="hidden md:block md:basis-1/2 relative">
             <div class="p-10">
-                <img src="dist/images/book.svg" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-90 lg:top-[59%] lg:left-[40%] lg:scale-[1.05]">
+                <img src="dist/images/book.svg" alt=""
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-90 lg:top-[59%] lg:left-[40%] lg:scale-[1.05]" />
                 <div class="md:max-w-lg xl:max-w-xl z-0 absolute">
-                    <h1 class="text-green-500 font-bold lg:text-5xl mb-5">Kelola Kehidupan Akademikmu dengan Mudah</h1>
-                    <p class="text-gray-600 lg:text-xl font-medium">Aplikasi Sistem Informasi Akademik untuk Mahasiswa, Dosen, dan Orang Tua dengan Beragam Fungsi yang Memudahkan</p>
+                    <h1 class="text-green-500 font-bold lg:text-5xl mb-5">
+                        Kelola Kehidupan Akademikmu dengan Mudah
+                    </h1>
+                    <p class="text-gray-600 lg:text-xl font-medium">
+                        Aplikasi Sistem Informasi Akademik untuk Mahasiswa, Dosen, dan
+                        Orang Tua dengan Beragam Fungsi yang Memudahkan
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="modal-help" class="hidden fixed p-5 w-screen h-screen backdrop-blur-sm backdrop-brightness-50 top-0 left-0 items-center justify-center">
-        <div class="bg-white rounded-2xl p-5 relative max-w-sm">
-            <div class="absolute right-4 top-4 rounded-full p-2 duration-200 group hover:bg-green-500" id="dismiss-modal-button">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 group-hover:stroke-white duration-200">
+    <div id="modal-help"
+        class="hidden fixed p-5 w-screen h-screen backdrop-blur-sm backdrop-brightness-50 top-0 left-0 items-center justify-center">
+        <div class="bg-white rounded-2xl p-5 relative max-w-sm md:max-w-lg lg:max-w-lg">
+            <div class="absolute right-4 top-4 rounded-full p-2 duration-100 group hover:bg-green-500 cursor-pointer"
+                id="close-help-desk">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 group-hover:stroke-white duration-100">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                  
+                </svg>
             </div>
-            <h2 class="font-bold text-2xl text-green-700 mb-3">Informasi Narahubung</h2>
-            <p class="text-sm  text-gray-500 mb-3">Jika memiliki masalah login, Silahkan untuk menghubungi narahubung pada <b>Jam Kerja Universitas Negeri Medan</b> Dengan menyebutkan Nama, NIM, Prodi, dan Pertanyaan</p>
+            <h2 class="font-bold text-2xl text-green-700 mb-3">
+                Informasi Narahubung
+            </h2>
+            <p class="text-sm text-gray-500 mb-3">
+                Jika memiliki masalah login, Silahkan untuk menghubungi narahubung
+                pada <b>Jam Kerja Universitas Negeri Medan</b> Dengan menyebutkan
+                Nama, NIM, Prodi, dan Pertanyaan
+            </p>
             <ul class="text-sm list-disc px-5 mb-3">
                 <li>Senin - Jum'at : 08.30 - 15.30 WIB</li>
             </ul>
 
             <ul class="flex flex-wrap gap-3">
-                <li class="w-full p-3 bg-slate-200 duration-200 group hover:bg-green-500  hover:text-white rounded-lg" data-phone="081325030289">
+                <li class="w-full p-3 bg-slate-200 duration-100 group hover:bg-green-500 hover:text-white rounded-lg"
+                    data-phone="081325030289">
                     <h3 class="font-semibold">Vini</h3>
                     <p class="text-sm">0813 - 2503 - 0289</p>
                 </li>
-                <li class="w-full p-3 bg-slate-200 duration-200 group hover:bg-green-500  hover:text-white rounded-lg" data-phone="082366699299">
+                <li class="w-full p-3 bg-slate-200 duration-100 group hover:bg-green-500 hover:text-white rounded-lg"
+                    data-phone="082366699299">
                     <h3 class="font-semibold">Yogi</h3>
                     <p class="text-sm">0823 - 6669 - 9299</p>
                 </li>
-                <li class="w-full p-3 bg-slate-200 duration-200 group hover:bg-green-500  hover:text-white rounded-lg" data-phone="081265420462">
+                <li class="w-full p-3 bg-slate-200 duration-100 group hover:bg-green-500 hover:text-white rounded-lg"
+                    data-phone="081265420462">
                     <h3 class="font-semibold">Titi</h3>
                     <p class="text-sm">0812 - 6542 - 0462</p>
                 </li>
@@ -116,36 +170,163 @@
         </div>
     </div>
 
+    <div id="modal-alert-info"
+        class="hidden fixed p-5 w-screen h-screen backdrop-blur-sm backdrop-brightness-50 top-0 left-0 items-center justify-center">
+        <div class="bg-[#96A7FF] rounded-2xl p-5 relative max-w-sm md:max-w-lg lg:max-w-lg">
+            <div class="p-5 bg-[#E0E5FF] w-fit rounded-[50px] absolute -top-[20%] lg:-top-[30%] left-10">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-24 h-24 lg:w-36 lg:h-36 stroke-[#96A7FF]">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
+                </svg>
+            </div>
+            <div class="absolute right-4 top-4 flex gap-1 justify-center items-center">
+                <div class="rounded-full p-2 duration-100 group hover:bg-white cursor-pointer text-xs text-white hover:text-[#96A7FF]"
+                    id="snooze-info">
+                    Jangan tampilan lagi (8 jam)
+                </div>
+                <div class="rounded-full p-2 duration-100 group hover:bg-white cursor-pointer" id="close-info-modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 stroke-white group-hover:stroke-[#96A7FF] duration-100">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+            </div>
+            <div class="text-white pt-16 lg:pt-20 mb-5 md:mb-10 px-5 md:px-10">
+                <h2 class="text-3xl font-bold mb-5">Peringatan</h2>
+                <p class="text-gray-100 mb-2">
+                    Bagi Mahasiswa Baru, Silahkan masuk sebagai "Mahasiswa Baru" dan
+                    Username dan Password adalah Nomor Registrasi SNMPTN/ UTBK/ MANDIRI
+                </p>
+                <p class="text-gray-100">
+                    Bagi Mahasiswa Baru, Silahkan masuk sebagai "Mahasiswa Baru" dan
+                    Username dan Password adalah Nomor Registrasi SNMPTN/ UTBK/ MANDIRI
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-alert-error"
+        class="hidden fixed p-5 w-screen h-screen backdrop-blur-sm backdrop-brightness-50 top-0 left-0 items-center justify-center">
+        <div class="bg-[#FF9696] rounded-2xl p-5 relative max-w-sm md:max-w-lg lg:max-w-lg">
+            <div class="p-5 bg-[#FFE0E0] w-fit rounded-[50px] absolute -top-[20%] lg:-top-[30%] left-10">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-24 h-24 lg:w-36 lg:h-36 stroke-[#FF9696]">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
+                </svg>
+            </div>
+            <div class="absolute right-4 top-4 rounded-full p-2 duration-100 group hover:bg-white cursor-pointer"
+                id="close-error-modal">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 stroke-white group-hover:stroke-[#FF9696] duration-100">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <div class="text-white pt-20 lg:pt-24 mb-5 md:mb-10 px-5 md:px-10">
+                <h2 class="text-3xl font-bold mb-5">Oops !</h2>
+                <p class="text-gray-100 mb-2">
+                    Username dan password kamu tidak terdaftar, harap cek kembali
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
     <script>
-        const helpDeskModal = document.getElementById("modal-help")
-        const helpDeskOpenButton = document.getElementById("open-help-desk")
-        const dismissModalButtons = document.getElementById("dismiss-modal-button")
+        // Get DOM elements for the modals and buttons
+        const helpDeskModal = document.getElementById("modal-help");
+        const helpDeskOpenButton = document.getElementById("open-help-desk");
+        const helpDeskCloseButton = document.getElementById("close-help-desk");
 
-        let isModalOpen = false
+        const infoModal = document.getElementById("modal-alert-info");
+        const infoCloseButton = document.getElementById("close-info-modal");
+        const snoozeButton = document.getElementById("snooze-info");
 
-        document.addEventListener('DOMContentLoaded', ()=>{
-            helpDeskOpenButton.addEventListener('click', openHelpDeskModal)
-            dismissModalButtons.addEventListener('click', closeHelpDeskModal)
-        })
+        const errorModal = document.getElementById("modal-alert-error");
+        const errorCloseButton = document.getElementById("close-error-modal");
 
-        const openHelpDeskModal = () => {
-            if(!isModalOpen){
-                helpDeskModal.classList.remove('hidden')
-                helpDeskModal.classList.add('flex')
-                isModalOpen = true
+        // Event listeners when the DOM is loaded
+        document.addEventListener("DOMContentLoaded", () => {
+            helpDeskOpenButton.addEventListener(
+                "click",
+                openModal.bind(null, helpDeskModal)
+            );
+            helpDeskCloseButton.addEventListener(
+                "click",
+                closeModal.bind(null, helpDeskModal)
+            );
+
+            infoCloseButton.addEventListener(
+                "click",
+                closeModal.bind(null, infoModal)
+            );
+
+            errorCloseButton.addEventListener(
+                "click",
+                closeModal.bind(null, errorModal)
+            );
+
+            snoozeButton.addEventListener("click", () => {
+                setSnooze();
+                closeModal(infoModal);
+            });
+
+            checkIfSnoozeExpired();
+        });
+
+        // Open a modal
+        const openModal = (modal) => {
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+        };
+
+        // Close a modal
+        const closeModal = (modal) => {
+            modal.classList.remove("flex");
+            modal.classList.add("hidden");
+        };
+
+        // Manually open the info modal
+        const openInfoModal = () => {
+            openModal(infoModal);
+        };
+
+        // Manually open the error modal
+        const openErrorModal = () => {
+            openModal(errorModal);
+        };
+
+        // Check if the snooze has expired
+        const checkIfSnoozeExpired = () => {
+            // Check if the snooze cookie exists
+            let isSnoozeCookie = Cookies.get("isSnooze");
+
+            if (isSnoozeCookie) {
+                let expirationDate = new Date(Cookies.get("isSnooze"));
+
+                if (expirationDate < new Date()) {
+                    // The snooze has expired, remove the cookie and open the info modal
+                    Cookies.remove("isSnooze", { path: "/" });
+                    openInfoModal();
+                }
+            } else {
+                // The snooze cookie doesn't exist, open the info modal
+                openInfoModal();
             }
-        }
+        };
 
-        const closeHelpDeskModal = () => {
-            if(isModalOpen){
-                helpDeskModal.classList.remove('flex')
-                helpDeskModal.classList.add('hidden')
-                isModalOpen = false
-            }
-        }
+        // Set the snooze
+        const setSnooze = () => {
+            let hour = 8; // The snooze duration in hours
+            let expirationTime = new Date(
+                new Date().getTime() + hour * 60 * 60 * 1000
+            ); // Calculate the expiration time
 
-
-
+            // Set the snooze cookie with the expiration time
+            Cookies.set("isSnooze", "true", { expires: expirationTime, path: "/" });
+        };
     </script>
 </body>
+
 </html>
