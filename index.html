@@ -8,8 +8,8 @@
     <title>AKAD | Login</title>
 </head>
 <body>
-    <div class="flex flex-col w-screen h-screen">
-        <div class="basis-2/6 w-full relative overflow-hidden">
+    <div class="flex flex-col md:flex-row w-screen h-screen">
+        <div class="basis-2/6 w-full relative overflow-hidden md:hidden">
             <div class="absolute inset-0 flex justify-center items-center">
                 <img src="dist/images/book.svg" alt="" class="animate-spin-slow">
             </div>
@@ -21,18 +21,20 @@
                 </div>
             </div>
         </div>
-        <div class="basis-4/6 w-full bg-slate-50 relative">
-            <form action="" class="absolute inset-0 flex justify-center items-center w-full flex-wrap gap-2">
+        <div class="hidden md:block w-96 h-96 bg-green-300/75 absolute top-1/2 left-3/4 -translate-x-1/2 -translate-y-1/2 scale-110"></div>
+        <div class="hidden md:block w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 backdrop-blur-[100px]"></div>
+        <div class="basis-4/6 md:basis-1/2 w-full bg-slate-50 md:bg-transparent relative">
+            <form action="" class="absolute inset-0 flex justify-center items-center w-full lg:max-w-xl flex-wrap gap-2 mx-auto">
                 <div class="flex flex-wrap gap-5 justify-center">
                     <div class="flex flex-wrap gap-2 sm:gap-4 justify-center px-16">
                         <div class="form-group w-full">
-                            <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-400 focus:bg-white duration-200" placeholder="Masukkan username anda">
+                            <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-white duration-200" placeholder="Masukkan username anda">
                         </div>
                         <div class="form-group w-full">
-                            <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-400 focus:bg-white duration-200" placeholder="Masukkan password anda">
+                            <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-white duration-200" placeholder="Masukkan password anda">
                         </div>
                         <div class="form-group w-full">
-                            <select type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-400 focus:bg-white duration-200 appearance-none text-gray-400 focus:text-black aria-selected:text-black">
+                            <select type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-white duration-200 appearance-none text-gray-400 focus:text-black aria-selected:text-black">
                                 <option value="" class="" disabled selected>login sebagai</option>    
                                 <option value="" class="px-5 py-3">mahasiswa</option>    
                                 <option value="" class="px-5 py-3">mahasiswa</option>    
@@ -49,7 +51,7 @@
                                 <div type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 text-center focus:outline-green-400 focus:bg-white duration-200"> 3+5 = ?</div>
                             </div>
                             <div class="form-group basis-1/2">
-                                <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-400 focus:bg-white duration-200" placeholder="Jawaban">
+                                <input type="text" class="w-full p-3.5 sm:p-5 bg-[#EEEEEE] rounded-xl focus:outline-2 focus:outline-green-700 focus:bg-white duration-200" placeholder="Jawaban">
                             </div>
                         </div>
                     </div>
@@ -57,23 +59,34 @@
                         <button class="p-3.5 md:p-5 text-center bg-green-500 w-full rounded-lg text-white font-bold text-lg shadow-[0_10px_30px_15px_rgba(22,163,74,0.3)] duration-200 hover:bg-green-600 hover:text-gray-200">Login</button>
                     </div>
                     <div class="flex justify-center w-full">
-                        <p class="text-xs">Memiliki kendala login ? <button class="text-green-700 underline" id="open-help-desk" type="button">hubungi admin</button></p>
+                        <p class="text-xs md:text-base">Memiliki kendala login ? <button class="text-green-700 underline" id="open-help-desk" type="button">hubungi admin</button></p>
                     </div>
-                    <div class="flex justify-center w-full">
-                        <div class="h-[1px] rounded-full w-1/2 mx-auto bg-slate-400"></div>
-                    </div>
-                    <div class="flex gap-3 justify-center items-center">
-                        <img src="dist/images/kemdikbud.png" alt="">
-                        <img src="dist/images/unimed.png" alt="">
-                        <img src="dist/images/kampus-merdeka.png" alt="">
+                    <div class="w-full flex flex-wrap justify-center gap-4 md:absolute md:bottom-10 md:left-0 md:right-0">
+                        <div class="flex justify-center w-full">
+                            <div class="h-[1px] rounded-full w-1/2 mx-auto bg-slate-400"></div>
+                        </div>
+                        <div class="flex gap-3 justify-center items-center md:scale-105">
+                            <img src="dist/images/kemdikbud.png" alt="">
+                            <img src="dist/images/unimed.png" alt="">
+                            <img src="dist/images/kampus-merdeka.png" alt="">
+                        </div>
                     </div>
                 </div>
             </form>
         </div>
+        <div class="hidden md:block md:basis-1/2 relative">
+            <div class="p-10">
+                <img src="dist/images/book.svg" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-90 lg:top-[50%] z-0">
+                <div class="md:max-w-lg xl:max-w-xl z-0 absolute">
+                    <h1 class="text-green-500 font-bold lg:text-5xl">Kelola Kehidupan Akademikmu dengan Mudah</h1>
+                    <p class="text-gray-800 lg:text-xl">Aplikasi Sistem Informasi Akademik untuk Mahasiswa, Dosen, dan Orang Tua dengan Beragam Fungsi yang Memudahkan</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="modal-help" class="hidden fixed p-5 w-screen h-screen backdrop-blur-sm backdrop-brightness-50 top-0 left-0 flex items-center justify-center">
-        <div class="bg-white rounded-2xl p-5 relative">
+    <div id="modal-help" class="hidden fixed p-5 w-screen h-screen backdrop-blur-sm backdrop-brightness-50 top-0 left-0 items-center justify-center">
+        <div class="bg-white rounded-2xl p-5 relative max-w-sm">
             <div class="absolute right-4 top-4 rounded-full p-2 duration-200 group hover:bg-green-500" id="dismiss-modal-button">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 group-hover:stroke-white duration-200">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
